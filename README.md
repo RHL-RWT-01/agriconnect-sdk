@@ -11,7 +11,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:stainless-sdks/agriconnect-typescript.git
+npm install git+ssh://git@github.com:RHL-RWT-01/agriconnect-sdk.git
 ```
 
 > [!NOTE]
@@ -29,7 +29,11 @@ const client = new Agriconnect({
   apiKey: process.env['PETSTORE_API_KEY'], // This is the default and can be omitted
 });
 
-const order = await client.store.orders.create({ petId: 1, quantity: 1, status: 'placed' });
+const order = await client.store.orders.create({
+  petId: 1,
+  quantity: 1,
+  status: 'placed',
+});
 
 console.log(order.id);
 ```
@@ -335,7 +339,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/agriconnect-typescript/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/RHL-RWT-01/agriconnect-sdk/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 
